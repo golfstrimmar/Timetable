@@ -153,9 +153,8 @@
   .months-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .kalendar-container {
-    margin: 150px auto 0;
+  .kalendar-container{
+    width: 100%;
   }
 }
 

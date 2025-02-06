@@ -1,5 +1,5 @@
 .kalendar-container {
-  margin: 100px auto 0;
+  margin: 150px auto 0;
   padding: 20px;
   background: #fff;
   border-radius: 12px;
@@ -152,10 +152,6 @@
 @media (max-width: 768px) {
   .months-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .kalendar-container {
-    margin: 150px auto 0;
   }
 }
 

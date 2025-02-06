@@ -1,0 +1,46 @@
+@import "../../scss/common/colors";
+
+
+.event-status {
+  width: 18px;
+  height: 18px;
+  display: grid !important;
+  place-items: center !important;
+
+
+  svg {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .MuiButtonBase-root {
+    display: none !important;
+  }
+
+  label {
+    margin: 0 !important;
+
+    span {
+      display: grid !important;
+      place-items: center !important;
+    }
+  }
+
+
+}
+
+
+
+.nein {
+  &:hover {
+    box-shadow: 0 0 10px #ec0d0d, 0 0 10px rgba(109, 109, 108, 0.7803921569);
+  }
+}
+
+.ja {
+  &:hover {
+    box-shadow: 0 0 10px #116710, 0 0 10px rgba(109, 109, 108, 0.7803921569);
+  }
+}

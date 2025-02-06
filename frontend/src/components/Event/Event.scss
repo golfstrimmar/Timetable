@@ -1,0 +1,142 @@
+@import "../../scss/common/colors";
+
+.event {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid $w;
+  border-radius: 5px;
+  gap: 5px;
+  padding: 2px;
+
+  &-date {
+    order: -1;
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #04286F;
+  }
+
+  &-content {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    border: #4F98BC 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+    background: #FFFEC9;
+    color: #090909 !important;
+  }
+
+  &._is-actuel {
+    background: #FFFEC9;
+    z-index: 300;
+  }
+
+  // &-edit {
+  //   margin: 0 5px 0 15px;
+  //   width: 20px;
+  //   height: 20px;
+  //   transition: all 0.2s ease-in-out;
+  //   border-radius: 50%;
+  //   display: grid;
+  //   place-items: center;
+
+  //   &:hover {
+  //     box-shadow: 0 0 10px $gray;
+  //   }
+
+  //   svg {
+  //     color: $gray;
+  //     width: 18px;
+  //     height: 18px;
+  //   }
+  // }
+  // &-delite {
+  //   transition: all 0.2s ease-in-out;
+  //   border-radius: 100%;
+  //   margin: 0 0 0 5px;
+
+  //   &:hover {
+  //     box-shadow: 0 0 10px #ec0d0d, 0 0 10px rgba(109, 109, 108, 0.7803921569);
+  //   }
+  // }
+
+  &.blueAlert {
+    animation: pulse 1s infinite
+  }
+
+  &.RedAlert {
+    animation: pulseRed 1s infinite
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+    background-color: #FFFEC9;
+  }
+
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 10px #04286F, 0 0 10px rgba(109, 109, 108, 0.7803921569);
+    background-color: #04286F;
+    color: whitesmoke;
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+    background-color: #FFFEC9;
+  }
+}
+
+@keyframes pulseRed {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+    background-color: #FFFEC9;
+  }
+
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 10px red, 0 0 10px rgba(109, 109, 108, 0.7803921569);
+    background-color: red;
+    color: whitesmoke;
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+    background-color: #FFFEC9;
+  }
+}
+
+.Dialog-delite {
+  font-size: 40px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+
+  &:nth-child(1) {
+    &:hover {
+      box-shadow: 0 0 10px #4F98BC;
+    }
+  }
+
+  &:nth-child(2) {
+    &:hover {
+      box-shadow: 0 0 10px #ec0d0d;
+    }
+  }
+}
+
+.delite-grupe {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}

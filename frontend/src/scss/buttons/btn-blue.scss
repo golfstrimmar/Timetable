@@ -1,0 +1,10 @@
+.btn-blue {
+  background-color: #8edbfa;
+  border: solid 1px #056f99;
+  &:hover {
+    color: rgb(29, 128, 1, 25%);
+    background-color: rgb(8, 101, 163);
+    border: solid 1px rgb(142, 219, 250, 25%);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 1);
+  }
+}

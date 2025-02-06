@@ -1,0 +1,67 @@
+@import "../../scss/common/colors";
+
+.timeminuts {
+  position: relative;
+
+  &-header {}
+
+
+
+  &-item {
+    transition: all .2s;
+    padding: 0 14px;
+
+    &:hover {
+      background: $blue-deep;
+      color: whitesmoke;
+
+    }
+  }
+
+  .klappen {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  .klappen-buttons-button {
+    width: 64px;
+    height: 64px;
+  }
+
+  &-plaza {
+    transition: all .2s;
+    transform: translateX(-50%) scaleY(0);
+    position: absolute;
+    z-index: 100;
+    background: whitesmoke;
+    color: $blue-deep;
+    border-radius: 5px;
+    border: 2px solid $w;
+    top: 32px;
+    left: 50%;
+    transform-origin: top;
+
+    &.run {
+      transform-origin: top;
+      transform: translateX(-50%) scaleY(1);
+
+    }
+  }
+
+
+}
+
+.minutesResult {
+  font-size: 20px;
+  border: 2px solid $blue-deep;
+  border-radius: 5px;
+  background: whitesmoke;
+  color: $blue-deep;
+  transition: all .2s;
+  min-width: 60px;
+  padding: 3px 0;
+  line-height: 1;
+  font-weight: 800;
+  text-align: center;
+}

@@ -1,0 +1,124 @@
+@import "../../scss/common/colors";
+
+.ereignishinzufügen {}
+
+.date-inputs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+
+.react-datepicker-wrapper {
+
+  margin: 0 auto;
+  display: block;
+  background: $blue-deep;
+  border-radius: 100%;
+  box-shadow: inset 0 0 10px #4e0c0c, 0 0 10px rgba(109, 109, 108, 0.7803921569);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+
+  * {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+  }
+
+  input {
+    opacity: 0;
+  }
+}
+
+
+
+ul.react-datepicker__time-list {
+  padding: 0 0 0 0 !important;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+  height: 15px;
+  padding: 5px;
+  white-space: nowrap;
+}
+
+.react-datepicker__time-container {
+  float: right;
+  border-left: 1px solid #aeaeae;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+  height: 22px !important;
+  padding: 5px !important;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.addbuttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+
+  button {
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+    min-width: 1px;
+    max-height: 35px !important;
+    display: grid;
+    place-items: center;
+    width: 30px !important;
+    height: 30px !important;
+
+    .MuiTouchRipple-root {
+      display: none !important;
+    }
+  }
+
+  &-icon {
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    min-width: 1px;
+    width: 30px !important;
+    height: 30px !important;
+    display: grid;
+    place-items: center;
+
+    &--back {
+      &:hover {
+        box-shadow: 0 0 10px #4F98BC;
+      }
+    }
+
+    &--delite {
+      &:hover {
+        box-shadow: 0 0 10px #04286F;
+      }
+    }
+
+  }
+}
+
+.addEvent-input {
+  margin: 20px 0 0 0;
+  border: #4F98BC solid 1px;
+}
+
+.form-content {
+  border: #F2B602 solid 3px;
+  border-radius: 5px;
+  padding: 5px;
+  min-height: 37px;
+  background-color: #FFFEC9;
+  margin: 10px 0 0 0;
+}
+
+.addEventmodal {
+
+  .css-kw13he-MuiDialogContent-root,
+  .MuiPaper-root {
+    min-height: 300px !important;
+  }
+}

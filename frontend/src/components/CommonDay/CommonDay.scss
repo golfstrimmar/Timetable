@@ -1,0 +1,52 @@
+@import "../../scss/common/colors";
+
+.commonday {
+  // display: flex;
+  // flex-direction: column;
+  margin: 100px 0 0 0;
+  position: relative;
+
+  ._temporaryRemove {
+    display: none !important;
+  }
+
+  .currentTime-marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: red;
+    z-index: 1;
+  }
+
+  .time {
+    border: 1px solid #e3e3e3;
+    min-height: 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    .events-container {
+      margin: 0 0 0 0;
+    }
+  }
+}
+
+
+.time {
+  &.past {
+    background-color: #04286F;
+    color: whitesmoke;
+  }
+
+  &.run {
+    font-weight: bold;
+    background: $blue;
+  }
+
+  &.now {
+    background-color: red !important;
+  }
+}

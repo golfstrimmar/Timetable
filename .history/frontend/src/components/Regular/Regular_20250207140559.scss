@@ -184,36 +184,11 @@
 
 @media (max-width: 767px) {
   .regularForm {
-    padding: 5px 5px;
+    padding: 20px;
     margin: 150px 0 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
-
-  .regular {
-    margin: 10px 0 0;
-  }
-
-  .danger-zone {
-    margin: 15px 0 15px;
-  }
-
-  .regular .kalendar-line--header {
-    gap: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .regular-start {
-    grid-gap: 30px;
-    gap: 30px;
-    grid-template-columns: 1fr;
-    margin: 20px 0 0;
-  }
-
-  .regular .header-day {
-    padding: 5px 10px;
-  }
+        .kalendar-line {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
 }

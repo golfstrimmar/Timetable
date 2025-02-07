@@ -262,19 +262,18 @@ const Eventino = () => {
             handleDateChange={handleDateChange}
             transData={event.date}
           />
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <TimeMinuts
-              length={24}
-              handleTimeChange={handleUhrChange}
-              startUhr={new Date(event.date).getHours()}
-            />
-            <span>:</span>
-            <TimeMinuts
-              length={12}
-              handleTimeChange={handleMinutsChange}
-              startMinuts={new Date(event.date).getMinutes()}
-            />
-          </div>
+          <TimeMinuts
+            length={24}
+            handleTimeChange={handleUhrChange}
+            startUhr={new Date(event.date).getHours()}
+          />
+          <span>:</span>
+          <TimeMinuts
+            length={12}
+            handleTimeChange={handleMinutsChange}
+            startMinuts={new Date(event.date).getMinutes()}
+          />
+
           <textarea
             type="text"
             className="eventino-textfield"

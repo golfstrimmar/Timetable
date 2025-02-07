@@ -184,7 +184,11 @@
 
 @media (max-width: 767px) {
   .regularForm {
+    background: #fffec9;
+    border-bottom: 2px solid #6b5f00;
+    box-shadow: 0 0 10px 10px #9b9a9a;
     padding: 5px 5px;
+    transform: translateY(0);
     margin: 150px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -200,20 +204,16 @@
   }
 
   .regular .kalendar-line--header {
-    gap: 10px;
+    gap: 5px;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
   }
 
   .regular-start {
     grid-gap: 30px;
+    display: grid;
     gap: 30px;
     grid-template-columns: 1fr;
     margin: 20px 0 0;
-  }
-
-  .regular .header-day {
-    padding: 5px 10px;
   }
 }

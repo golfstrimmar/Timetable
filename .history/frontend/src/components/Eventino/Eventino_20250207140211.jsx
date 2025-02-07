@@ -262,7 +262,7 @@ const Eventino = () => {
             handleDateChange={handleDateChange}
             transData={event.date}
           />
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <div style={{ display: "flex", }}>
             <TimeMinuts
               length={24}
               handleTimeChange={handleUhrChange}

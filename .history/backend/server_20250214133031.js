@@ -176,10 +176,13 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(5000, () => {
-  console.log("Server is running on port 5000");
+// server.listen(5000, () => {
+//   console.log("Server is running on port 5000");
+// });
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
-
 // import express from "express";
 // import cors from "cors";
 // import { connectDB } from "./config/db.js";

@@ -13,7 +13,7 @@ function App() {
   const AllEvents = localStorage.getItem("events");
 
   useEffect(() => {
-    const socket = io("https://great-bejewled-nurse.glitch.me");
+    const socket = io(serverUrl);
     socket.on("connect", () => {
       console.log("Connected to server with id:", socket.id);
       dispatch(setSocket(socket));

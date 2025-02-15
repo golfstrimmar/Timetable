@@ -13,7 +13,7 @@ function App() {
   const AllEvents = localStorage.getItem("events");
 
   useEffect(() => {
-    const socket = io(serverUrl, {
+    const socket = io("https://great-bejewled-nurse.glitch.me", {
       transports: ["polling", "websocket"],
     });
     socket.on("connect", () => {

@@ -13,9 +13,9 @@ function App() {
   const AllEvents = localStorage.getItem("events");
 
   useEffect(() => {
-    const socket = io(serverUrl, {
-      transports: ["polling", "websocket"],
-    });
+    const socket = io("https://great-bejewled-nurse.glitch.me"), {
+  transports: ['polling', 'websocket']
+});
     socket.on("connect", () => {
       console.log("Connected to server with id:", socket.id);
       dispatch(setSocket(socket));
